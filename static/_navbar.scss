@@ -1,0 +1,111 @@
+
+.navbar-container   {
+
+    z-index: 100;
+}
+
+.navbar {
+    width:100%;
+    ul    {
+        float:right;
+        margin-right: 20px;
+
+        li  {
+            display: inline-block;
+            line-height: 80px;
+            margin:0 5px;
+        
+            a   {
+                color:black;
+                font-size: 17px;
+                padding:7px 13px;
+                border-radius: 3px;
+                &.active,&:hover    {
+                    background: $red;
+                    transition-duration: .7s;
+                }
+            }
+        }
+    }
+
+    img {
+        height: 80px;
+        padding-left:15px;
+    };
+}
+
+
+#check  {
+    display: none;
+}
+
+.checkbtn   {
+    font-size: 30px;
+    padding-right:15px;
+    color:$red;
+    float:right;
+    line-height: 100px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:1080px ){
+    .navbar {
+            ul li a     {
+                font-size:15px;
+                padding:7px 10px;
+            };
+            img {
+                padding-top:20px;
+            };
+    }
+}
+
+
+
+@media screen and (max-width:890px ){
+    .checkbtn   {
+        display: block;
+    }
+    .navbar {
+        ul    {
+            position: fixed;
+            width:100%;
+            height: 100vh;
+            background-color: $red;
+            top:100px;
+            left:-100%;
+            text-align: center;
+            z-index: 5;
+            transition:all .5s;
+            li  {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+                a           {
+                    font-size: 20px;
+                    &:hover,&.active    {
+                        background:none;
+                        color: $white;
+                    }
+                };
+            };
+        }
+        img {
+            display: block;
+            margin: auto;
+        };
+        #check:checked ~ ul{
+            left:0;
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .navbar img{
+        height:70px;
+        padding-top: 25px;
+    }
+}
+
+

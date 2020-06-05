@@ -1,0 +1,88 @@
+.bottom-container   {
+    width:100%;
+    color: white;
+    background-color: black;
+    p {
+        text-align: center;
+        padding: 15px 0;
+    };
+}
+
+.bottom {
+    padding: 15px 0;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    ul  {
+        li{
+            padding-left: 15px;
+            padding-bottom: 15px;
+            &:nth-child(1)  {
+            padding-bottom: 20px;
+            padding-left: 0;
+            font-weight: bold;
+            font-size: 1.2em;
+            }
+            a{
+                color: white;
+                cursor: pointer;
+                &:hover{
+                    opacity: .5;
+                    transition-duration: .7s;
+                }
+            }
+            
+        }
+    }
+    .contact-icons  {
+        width: 300px;
+            .icons  {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background-color: white;
+                margin-right: .3em;
+                color: #2d3e50;
+                mask-repeat: no-repeat;
+                margin-left: 15px;
+                &:hover{
+                    opacity: .5;
+                    transition-duration: .7s;
+                }
+            }
+            .messenger  {
+                mask-image: url('./icons/facebook-messenger.svg');
+    
+            }
+            .facebook {
+                mask-image: url('./icons/facebook.svg');
+            }
+            .tripadvisor   {
+                mask-image: url('./icons/tripadvisor.svg');
+            }
+            .youtube   {
+                mask-image: url('./icons/youtube.svg');
+            }
+            .twitter   {
+                mask-image: url('./icons/twitter.svg');
+            }
+            .linkedin  {
+                mask-image: url('./icons/linkedin.svg');
+            }
+            .mail {
+                mask-image: url('./icons/mail.svg');
+            }
+            .phone {
+                mask-image: url('./icons/phone.svg');
+            }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .bottom ul{
+        width: 300px;
+        margin: 15px auto;
+    }
+}

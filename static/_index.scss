@@ -1,0 +1,415 @@
+.reserve-button-index   {
+    @include buttonStyle($red);
+    @include Centrer();
+    padding: 1% 4%;
+    z-index:1;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.index-container    {
+    position: relative;
+    width: 100%;
+}
+
+.index-container img    {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+}
+
+.reserve-button-index {
+    cursor:pointer;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+
+@media screen and (max-width:890px) {
+    .index-container    .reserve-button-index   {
+        font-size: 1.5em;
+        left: 38%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .index-container    .reserve-button-index   {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .index-container    .reserve-button-index   {
+        font-size: 1.1em;
+        top:43%;
+        left: 33%;
+
+    }
+}
+
+/* Presentation */
+
+.presentation-container {
+    width:100%;
+}
+.presentation-container{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    .main-title-index, .h2-title-index   {
+        display: block;
+        margin: auto;
+    }
+    .main-title-index  {
+        padding:10px 0;
+        width:70%;
+        font-size: 3em;
+    }
+    .h2-title-index   {
+        width:50%;
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width:750px) {
+    .presentation-container {
+        .main-title-index{
+            font-size: 2em;
+        }
+
+        .h2-title-index{
+            font-size: 1.3em;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .presentation-container {
+        .main-title-index{
+            font-size: 1.7em;
+        }
+
+        .h2-title-index{
+            font-size: 1em;
+        }
+    }
+}
+@media screen and (max-width:415px) {
+    .presentation-container {
+        .main-title-index{
+            font-size: 1.3em;
+        }
+
+        .h2-title-index{
+            font-size: .9em;
+        }
+    }
+}
+
+.dessin-explicatif-container    {
+    width:100%;
+}
+
+.dessin-explicatif  {
+    width:90%;
+    padding: 3% 0;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    div {
+        width:23%;
+        border-radius: 25px;
+        box-shadow: 1px 1px 10px -1px rgba(0,0,0,1);
+        &:nth-child(1) {
+            border: 4px solid  $blue;
+            color:$blue;
+        }
+        &:nth-child(2)  {
+            border: 4px solid  $red;
+            color:$red;
+        }  
+        &:nth-child(3)  {
+            border: 4px solid  $purple;
+            color:$purple;
+        }   
+        &:nth-child(4)  {
+            border: 4px solid  $orange;
+            color:$orange;
+        }
+        &:hover{
+            transform:scale(0.95);
+            transition-duration: .7s;
+        }  
+        svg {
+            width:100%;
+        }
+        h2 {
+            height: 120px;
+            width:90%;
+            font-size: 1.5em;
+        };
+        p {
+            width:100%;
+            padding: 2% 20%;
+            font-size:1em;
+        };
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .dessin-explicatif div  {            
+        width: 400px;
+        margin: 25px 0;
+        
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .dessin-explicatif  {
+        display: block;
+        width:100%;
+    }
+    .dessin-explicatif div  {     
+        display: block;
+        width: 500px;
+        margin: auto;
+        margin-top:25px;
+        h2 {
+            height: 70px !important;
+            font-size: 1.5em !important;
+        };
+        p {
+            font-size:1.3em !important;
+        };
+    }
+}
+
+
+@media screen and (max-width:585px) {
+    .dessin-explicatif div  {     
+        width: 300px;
+        h2 {
+            height: 70px !important;
+            font-size: 1.3em !important;
+        };
+        p {
+            font-size:1em !important;
+        };
+    }
+}
+
+/* end Presentation */
+
+/* escape rooms */
+.fond-escape-container  {
+    background-color: rgb(255, 248, 248) !important;
+}
+.big-escape-container   {
+    width: 80%;
+    display:block;
+    margin: auto;
+    padding:5% 0;
+}
+
+.escape-container   {
+    color: white;
+    @include flexInContainer() ;
+    div {
+        width:30%;
+        img{
+            display: block;
+            margin: auto;
+            padding: 15px 0;
+            
+        }
+        h2  {
+            text-align: center;
+            font-family: $lemonada;
+            line-height: 96px;
+            text-transform: uppercase;
+        }
+
+        section {
+            width:100%;
+            background-color: rgba(0,0,0,.5);
+            height: 28%;
+            p{
+                font-size: 1.1em;
+                padding: 5px 0;
+                width: 80%;
+                margin: auto;
+            };
+        }
+
+        button {
+            @include buttonWrite();
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+                transition-duration: .7s;
+            };
+        }
+        &:nth-child(1)  {
+            border: 6px solid$red;
+            background-image: url('./cartel_fond.jpg');
+            h2{
+                background-color: $red;
+            }
+            button  {
+                    @include buttonStyle($red);
+            }
+        }
+        &:nth-child(2)  {
+            border: 6px solid $blue;
+            background-image: url('./casse_fond.jpg');
+            h2{
+                background-color: $blue;
+            }
+            button  {
+                @include buttonStyle($blue);
+            }
+        }
+        &:nth-child(3)  {
+            border: 6px solid $purple;
+            background-image: url('./illusion_fond.jpg');
+            h2{
+                background-color: $purple;
+            }
+
+            button  {
+                @include buttonStyle($purple);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1260px)    {
+    .escape-container div   {
+        width: 45%;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:840px)    {
+    .escape-container div   {
+        width: 75%;
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width:500px)    {
+    .escape-container div   {
+        height: 550px;
+        width: 95%;
+        h2  {
+            font-size:1.2em;
+            line-height: 65px;
+            text-transform: uppercase;
+        }
+
+        section {
+            height:30%;
+            p   {
+                font-size:.9em;
+            }
+        };
+    }
+}
+
+@media screen and (max-width:345px)    {
+    .escape-container div  button {
+        font-size: 1.1em;
+    }
+}
+/*end escape rooms*/
+
+
+/* options */
+
+.options-container  {
+    @include flexInContainer() ;
+    div {
+        border: 2px solid black;
+        display: flex;
+        position: relative;
+        min-height: 350px;
+        width:350px;
+        color:white;
+        background-position: center;
+        &:nth-child(1)  {
+            background-image: url('./reserver.jpg');
+        }
+        &:nth-child(2)  {
+            background-image: url('./cadeau.jpg');
+        }
+        &:nth-child(3)  {
+            background-image: url('./team.jpg');
+        }
+        section{
+            
+            left:0;
+            bottom:0;
+            position: absolute;
+            max-height: 205px;
+            background-color: rgba(0,0,0,.5);
+            button {
+                @include buttonStyle(black);
+                @include buttonWrite();
+            }
+            h3   {
+                padding-top: 15px;
+                text-align: center;
+                font-weight: normal;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1230px)    {
+    .options-container div  {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:949px)    {
+    .options-container div  {
+        display: block;
+        margin: 15px auto;
+    }
+}
+
+/*end options*/
+
+
+.carte-container    {
+    padding: 15px 0;
+    font-size: 1.7em;
+    text-align: center;
+    color:white;
+    background-color: $orange;
+    iframe  {
+        width:90%;
+        border: 2px solid black !important;
+        border-radius: 30px;
+    }
+    h2{
+        @include Centrer();
+        padding: 15px 0;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .carte-container h2{
+        font-size: 1.1em;
+    }
+}
+
+
