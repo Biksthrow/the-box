@@ -17,31 +17,32 @@ def index():
 
 @app.route('/reservation')
 def reservation():
-    logo = url_for('static', filename='Logo.svg')
+    logo = url_for('static', filename='./icons/Logo.svg')
     return render_template('reservation.html',log =logo)
 
 @app.route('/entreprises')
 def entreprises():
+    logo = url_for('static', filename='./icons/Logo.svg')
     return render_template('entreprises.html',log =logo)
 
 @app.route('/cadeaux')
 def cadeaux():
-    logo = url_for('static', filename='Logo.svg')
+    logo = url_for('static', filename='./icons/Logo.svg')
     return render_template('cadeaux.html',log =logo)
 
 @app.route('/jeux')
 def jeux():
-    logo = url_for('static', filename='Logo.svg')
+    logo = url_for('static', filename='./icons/Logo.svg')
     return render_template('jeux.html',log =logo)
 
 @app.route('/faq')
 def faq():
-    logo = url_for('static', filename='Logo.svg')
+    logo = url_for('static', filename='./icons/Logo.svg')
     return render_template('faq.html',log =logo)
 
 @app.route('/contact')
 def contact():
-    logo = url_for('static', filename='Logo.svg')
+    logo = url_for('static', filename='./icons/Logo.svg')
     return render_template('contact.html',log =logo)
 
 if __name__ == '__main__':
