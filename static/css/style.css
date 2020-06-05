@@ -304,7 +304,7 @@
 
 .escape-container div:nth-child(1) {
   border: 6px solid #bd1522;
-  background-image: url("./cartel_fond.jpg");
+  background-image: url("./img/cartel_fond.jpg");
 }
 
 .escape-container div:nth-child(1) h2 {
@@ -335,7 +335,7 @@
 
 .escape-container div:nth-child(2) {
   border: 6px solid #1f9dbf;
-  background-image: url("./casse_fond.jpg");
+  background-image: url("./img/casse_fond.jpg");
 }
 
 .escape-container div:nth-child(2) h2 {
@@ -366,7 +366,7 @@
 
 .escape-container div:nth-child(3) {
   border: 6px solid #64368d;
-  background-image: url("./illusion_fond.jpg");
+  background-image: url("./img/illusion_fond.jpg");
 }
 
 .escape-container div:nth-child(3) h2 {
@@ -461,15 +461,15 @@
 }
 
 .options-container div:nth-child(1) {
-  background-image: url("./reserver.jpg");
+  background-image: url("./img/reserver.jpg");
 }
 
 .options-container div:nth-child(2) {
-  background-image: url("./cadeau.jpg");
+  background-image: url("./img/cadeau.jpg");
 }
 
 .options-container div:nth-child(3) {
-  background-image: url("./team.jpg");
+  background-image: url("./img/team.jpg");
 }
 
 .options-container div section {

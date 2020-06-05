@@ -5,16 +5,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    logo = url_for('static', filename='Logo.svg')
-    image_file = url_for('static', filename='imgHead.png')
-    un_file = url_for('static', filename='un.svg')
-    deux = url_for('static', filename='deux.svg')
-    trois = url_for('static', filename='trois.svg')
-    quatre = url_for('static', filename='quatre.svg')
-    cartel_file  = url_for('static', filename='logoCartel.png')
-    casse_file = url_for('static', filename='casse.png')
-    illusion_file = url_for('static', filename='illusion.png')
-    return render_template('index.html',cartel =cartel_file,illusion =illusion_file,casse =casse_file, img1 =image_file,log =logo, un=un_file, deux =deux,trois=trois,quatre=quatre)
+    logo = url_for('static', filename='./icons/Logo.svg')
+    image_file = url_for('static', filename='./img/imgHead.png')
+    cartel_file  = url_for('static', filename='./img/logoCartel.png')
+    casse_file = url_for('static', filename='./img/casse.png')
+    illusion_file = url_for('static', filename='./img/illusion.png')
+    return render_template('index.html',cartel =cartel_file,illusion =illusion_file,casse =casse_file, img1 =image_file,log =logo)
 
 
 
