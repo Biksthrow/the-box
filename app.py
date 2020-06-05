@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    kdo= url_for('static', filename='./icons/cadeau.jpg')
     logo = url_for('static', filename='./icons/Logo.svg')
     image_file = url_for('static', filename='./img/imgHead.png')
     cartel_file  = url_for('static', filename='./img/logoCartel.png')

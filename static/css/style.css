@@ -304,7 +304,7 @@
 
 .escape-container div:nth-child(1) {
   border: 6px solid #bd1522;
-  background-image: url("./img/cartel_fond.jpg");
+  background-image: url("../img/cartel_fond.jpg");
 }
 
 .escape-container div:nth-child(1) h2 {
@@ -335,7 +335,7 @@
 
 .escape-container div:nth-child(2) {
   border: 6px solid #1f9dbf;
-  background-image: url("./img/casse_fond.jpg");
+  background-image: url("../img/casse_fond.jpg");
 }
 
 .escape-container div:nth-child(2) h2 {
@@ -366,7 +366,7 @@
 
 .escape-container div:nth-child(3) {
   border: 6px solid #64368d;
-  background-image: url("./img/illusion_fond.jpg");
+  background-image: url("../img/illusion_fond.jpg");
 }
 
 .escape-container div:nth-child(3) h2 {
@@ -461,15 +461,15 @@
 }
 
 .options-container div:nth-child(1) {
-  background-image: url("./img/reserver.jpg");
+  background-image: url("../img/reserver.jpg");
 }
 
 .options-container div:nth-child(2) {
-  background-image: url("./img/cadeau.jpg");
+  background-image: url("../img//cadeau.jpg");
 }
 
 .options-container div:nth-child(3) {
-  background-image: url("./img/team.jpg");
+  background-image: url("../img/team.jpg");
 }
 
 .options-container div section {
@@ -730,43 +730,43 @@
 }
 
 .bottom .contact-icons .messenger {
-  -webkit-mask-image: url("./icons/facebook-messenger.svg");
-          mask-image: url("./icons/facebook-messenger.svg");
+  -webkit-mask-image: url("../icons/facebook-messenger.svg");
+          mask-image: url("../icons/facebook-messenger.svg");
 }
 
 .bottom .contact-icons .facebook {
-  -webkit-mask-image: url("./icons/facebook.svg");
-          mask-image: url("./icons/facebook.svg");
+  -webkit-mask-image: url("../icons/facebook.svg");
+          mask-image: url("../icons/facebook.svg");
 }
 
 .bottom .contact-icons .tripadvisor {
-  -webkit-mask-image: url("./icons/tripadvisor.svg");
-          mask-image: url("./icons/tripadvisor.svg");
+  -webkit-mask-image: url("../icons/tripadvisor.svg");
+          mask-image: url("../icons/tripadvisor.svg");
 }
 
 .bottom .contact-icons .youtube {
-  -webkit-mask-image: url("./icons/youtube.svg");
-          mask-image: url("./icons/youtube.svg");
+  -webkit-mask-image: url("../icons/youtube.svg");
+          mask-image: url("../icons/youtube.svg");
 }
 
 .bottom .contact-icons .twitter {
-  -webkit-mask-image: url("./icons/twitter.svg");
-          mask-image: url("./icons/twitter.svg");
+  -webkit-mask-image: url("../icons/twitter.svg");
+          mask-image: url("../icons/twitter.svg");
 }
 
 .bottom .contact-icons .linkedin {
-  -webkit-mask-image: url("./icons/linkedin.svg");
-          mask-image: url("./icons/linkedin.svg");
+  -webkit-mask-image: url("../icons/linkedin.svg");
+          mask-image: url("../icons/linkedin.svg");
 }
 
 .bottom .contact-icons .mail {
-  -webkit-mask-image: url("./icons/mail.svg");
-          mask-image: url("./icons/mail.svg");
+  -webkit-mask-image: url("../icons/mail.svg");
+          mask-image: url("../icons/mail.svg");
 }
 
 .bottom .contact-icons .phone {
-  -webkit-mask-image: url("./icons/phone.svg");
-          mask-image: url("./icons/phone.svg");
+  -webkit-mask-image: url("../icons/phone.svg");
+          mask-image: url("../icons/phone.svg");
 }
 
 @media screen and (max-width: 900px) {

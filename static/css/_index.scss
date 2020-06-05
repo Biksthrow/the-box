@@ -256,7 +256,7 @@
         }
         &:nth-child(1)  {
             border: 6px solid$red;
-            background-image: url('./img/cartel_fond.jpg');
+            background-image: url('../img/cartel_fond.jpg');
             h2{
                 background-color: $red;
             }
@@ -266,7 +266,7 @@
         }
         &:nth-child(2)  {
             border: 6px solid $blue;
-            background-image: url('./img/casse_fond.jpg');
+            background-image: url('../img/casse_fond.jpg');
             h2{
                 background-color: $blue;
             }
@@ -276,7 +276,7 @@
         }
         &:nth-child(3)  {
             border: 6px solid $purple;
-            background-image: url('./img/illusion_fond.jpg');
+            background-image: url('../img/illusion_fond.jpg');
             h2{
                 background-color: $purple;
             }
@@ -343,13 +343,13 @@
         color:white;
         background-position: center;
         &:nth-child(1)  {
-            background-image: url('./img/reserver.jpg');
+            background-image: url("../img/reserver.jpg");
         }
         &:nth-child(2)  {
-            background-image: url('./img/cadeau.jpg');
+            background-image: url('../img//cadeau.jpg');
         }
         &:nth-child(3)  {
-            background-image: url('./img/team.jpg');
+            background-image: url('../img/team.jpg');
         }
         section{
             
